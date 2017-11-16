@@ -52,7 +52,7 @@
     "keystone-storage-namefunctions": "1.1.1",
     "keystone-utils": "0.4.0",
     "knox": "keystonejs/knox",
-    "less-middleware": "2.2.1",
+    "less-middleware": "^2.2.1",
     "letsencrypt-express": "2.0.6",
     "list-to-array": "1.1.0",
     "lodash": "4.17.4",
@@ -94,7 +94,8 @@
     "string-to-stream": "1.1.0",
     "vkey": "1.0.1",
     "watchify": "3.9.0",
-    "xhr": "2.4.0"
+    "xhr": "2.4.0",
+    "snyk": "^1.49.2"
   },
   "devDependencies": {
     "@ljharb/eslint-config": "^11.0.0",
@@ -162,7 +163,7 @@
     "build": "cross-env NODE_ENV=production node build.js | uglifyjs -mc warnings=false,screw_ie8=true -b beautify=false,semicolons=true > ./admin/public/js/packages.js",
     "build-dev": "node build.js > ./admin/public/js/packages.js",
     "pretest": "npm run lint && node test/pretest.js",
-    "test": "mocha && mocha --opts test/mocha-admin.opts",
+    "test": "snyk test && mocha && mocha --opts test/mocha-admin.opts",
     "test-all": "npm test && npm run test-e2e-bg",
     "test-unit": "node test/pretest.js && mocha",
     "test-admin": "mocha --opts test/mocha-admin.opts",
@@ -178,6 +179,9 @@
     "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "posttest-cov": "if [ -n \"$CODECLIMATE_REPO_TOKEN\" ]; then codeclimate-test-reporter < coverage/lcov.info; fi",
     "clean": "rimraf ./coverage",
-    "fields-explorer": "node ./fields/explorer/server.js"
-  }
+    "fields-explorer": "node ./fields/explorer/server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
