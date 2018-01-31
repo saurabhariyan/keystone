@@ -21,7 +21,7 @@
     "bcrypt-nodejs": "~0.0.3",
     "blacklist": "1.1.4",
     "body-parser": "1.18.2",
-    "brfs": "1.4.3",
+    "brfs": "1.4.4",
     "browserify": "13.3.0",
     "browserify-shim": "3.8.14",
     "caller-id": "0.1.0",
