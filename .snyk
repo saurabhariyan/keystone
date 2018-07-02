@@ -12,3 +12,8 @@ patch:
   'npm:mime:20170907':
     - embedly > superagent > mime:
         patched: '2018-06-25T22:49:01.653Z'
+  'npm:lodash:20180130':
+    - asyncdi > lodash:
+        patched: '2018-07-02T22:39:27.415Z'
+    - grappling-hook > lodash:
+        patched: '2018-07-02T22:39:27.415Z'
