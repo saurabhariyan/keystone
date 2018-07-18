@@ -95,7 +95,7 @@
     "vkey": "1.0.1",
     "watchify": "3.9.0",
     "xhr": "2.4.0",
-    "snyk": "^1.85.0"
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "@ljharb/eslint-config": "^11.0.0",
