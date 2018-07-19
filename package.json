@@ -52,7 +52,7 @@
     "keystone-storage-namefunctions": "1.1.1",
     "keystone-utils": "0.4.0",
     "knox": "keystonejs/knox",
-    "less-middleware": "^2.2.1",
+    "less-middleware": "^3.0.0",
     "letsencrypt-express": "2.0.6",
     "list-to-array": "1.1.0",
     "lodash": "4.17.5",
