@@ -61,7 +61,7 @@
     "mime-types": "2.1.15",
     "moment": "2.19.3",
     "mongoose": "4.11.14",
-    "morgan": "1.9.0",
+    "morgan": "1.9.1",
     "multer": "1.0.0",
     "numeral": "2.0.6",
     "object-assign": "4.1.1",
